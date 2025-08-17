@@ -12,10 +12,11 @@
 
 
 # Nosso layout esta quebrado, precisamos consertar.
+# Precisamos das bordas nos inputs e no botão, o padrao é 10px;
 <img width="992" height="665" alt="image" src="https://github.com/user-attachments/assets/d17e2b46-9d55-415d-949d-4f69f3539c81" />
 
 
-# Precisamos das bordas nos inputs e no botão, o padrao é 10px;
+
 
 
 
