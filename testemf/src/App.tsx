@@ -4,7 +4,7 @@ import './app.css'
 
 function App() {
   const [email, setEmail] = useState<string>('');
-  const [senha, setSenha] = useState<string>('2058369');
+  const [senha, setSenha] = useState<string>('');
   const [resp, setResp] = useState<number>(0);
 
 
