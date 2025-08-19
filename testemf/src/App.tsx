@@ -3,8 +3,8 @@ import './app.css'
 
 
 function App() {
-  const [email, setEmail] = useState<number>();
-  const [senha, setSenha] = useState<number>(2058369);
+  const [email, setEmail] = useState<string>('');
+  const [senha, setSenha] = useState<string>('2058369');
   const [resp, setResp] = useState<number>(0);
 
 
@@ -22,17 +22,19 @@ function App() {
 
 
   return (
-    <section className='maiin'>
+    <section className='main'>
       {resp === 0 && (
         <div className='form'>
-          <h1>MOVIMENTOo FUTuRO</h1>
+          <h1>MOVIMENTO FUTURO</h1>
 
-          <div className='boxFormm'>
+          <div className='boxForm'>
             <label>Email:</label>
             <input type="email"
              
               value={email}
-              onChange={(e) => setEmail(e.target.value)} />
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder='Digite seu email' 
+              />
 
           </div>
 
@@ -41,10 +43,12 @@ function App() {
             <input type="text"
               
               value={senha}
-              onChange={(e) => setSenha(e.target.value)} />
+              onChange={(e) => setSenha(e.target.value)}
+              placeholder='Digite sua senha' 
+              />
           </div>
 
-          <button onClick={entrar}>Acessar</button>
+          <button onClick={entrar}>Entrar</button>
 
         </div>
       )
